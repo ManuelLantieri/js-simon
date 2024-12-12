@@ -20,11 +20,23 @@
 
 
 
-     <div>
+     <div class="d-flex vh-100 w-50 m-auto d-flex justify-content-center align-items-center">
         <div id="countdown" class="fs-1 fw-bolder"></div>
         <p id="rules">Memorizza i numeri entro la fine del Countdown</p>
 
         <ul id="number-list" class="d-flex gap-5 list-unstyled"></ul>
+
+        <form id="answers-form" class="d-none">
+            <div class="d-flex gap-5" id="input-list">
+                <input type="number" class="form-control" min="1" max="100" required>
+                <input type="number" class="form-control" min="1" max="100" required>
+                <input type="number" class="form-control" min="1" max="100" required>
+                <input type="number" class="form-control" min="1" max="100" required>
+                <input type="number" class="form-control" min="1" max="100" required>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2 d-block mx-auto">Conferma</button>
+            <p class="text-danger text-danger" id="final-message"></p>
+        </form>
      </div>
 
 
